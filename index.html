@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Dados Simulados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Dados Simulados</h1>
+        <div class="fields">
+            <h2>Selecione os Campos</h2>
+            <label><input type="checkbox" id="nome"> Nome</label>
+            <label><input type="checkbox" id="endereco"> Endereço</label>
+            <label><input type="checkbox" id="telefone"> Telefone</label>
+            <label><input type="checkbox" id="cpf"> CPF</label>
+            <label><input type="checkbox" id="cnpj"> CNPJ</label>
+        </div>
+        <div class="inputs">
+            <label>Quantidade de Linhas: <input type="number" id="numLinhas" min="1"></label>
+            <label>Quantidade de Arquivos: <input type="number" id="numArquivos" min="1"></label>
+            <label>Nome do Evento: <input type="text" id="nomeEvento"></label>
+        </div>
+        <button id="gerarDados">Gerar Dados</button>
+        <div id="progress" class="progress"></div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

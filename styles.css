@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.fields, .inputs {
+    margin-top: 20px;
+}
+
+.fields label, .inputs label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label input[type="number"], label input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.progress {
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Mensagem de sucesso */
+.progress.sucesso {
+    color: #ffffff;
+    background-color: #2196f3; /* Azul para indicar sucesso */
+}
+
+/* Mensagem de erro */
+.progress.erro {
+    color: #ffffff;
+    background-color: #f44336; /* Vermelho para indicar erro */
+}
